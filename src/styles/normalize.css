@@ -7,6 +7,18 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 
 html {
   line-height: 1.15; /* 1 */
@@ -23,10 +35,6 @@ html {
 /**
  * Remove the margin in all browsers.
  */
-
-body {
-  margin: 0;
-}
 
 /**
  * Render the `main` element consistently in IE.
