@@ -7,8 +7,8 @@ import styles from './App.module.css';
 function App() {
   const [count, setCount] = useState(0);
   useEffect(() => {
-    console.log(count);
-  }, []);
+    console.log(count, setCount);
+  }, [count]);
   return (
     <div className={styles.container}>
       入口<Button></Button>
