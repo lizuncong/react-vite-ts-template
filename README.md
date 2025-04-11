@@ -91,9 +91,13 @@ lint-staged 是一个工具，它允许你在 Git 提交前对暂存区（即通
 - 提高代码质量：在提交前自动检查代码，减少低质量代码被提交的概率。
 - 集成流畅：与 husky 等工具结合，能够自动化工作流，减少手动操作
 
-执行npm install后，默认会在项目根目录下新建.husky文件目录，需要在下面新增两个文件，才能使得git commit时自动跑lint校验。
+执行npm install后，默认会在项目根目录下新建.husky文件目录，需要在.husky下面新增两个文件，才能使得git commit时自动跑lint校验。
 
-- commit-msg
-- pre-commit
+- .husky/commit-msg
+- .husky/pre-commit
 
 ![image](./docs/husky.png)
+
+如下图所示，当代码中存在错误时，代码就没法提交上去
+
+![image](./docs/lint_stage.gif)
