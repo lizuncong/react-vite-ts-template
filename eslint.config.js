@@ -54,6 +54,7 @@ export default tseslint.config(
       'simple-import-sort/exports': 'error',
       'no-unused-vars': 'off', // or "@typescript-eslint/no-unused-vars": "off",
       'unused-imports/no-unused-imports': 'error',
+      '@typescript-eslint/no-floating-promises': 'off',
       'unused-imports/no-unused-vars': [
         'warn',
         {
