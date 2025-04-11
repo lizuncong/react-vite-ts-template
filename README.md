@@ -4,7 +4,7 @@ React + TypeScript + Vite + React Router + React Redux项目脚手架模版。
 
 - 很好的集成了Code Lint周边工具，支持对TS，CSS，LESS等文件的自动格式化。
 - 支持PC 和 H5
-- 内置目录结构
+- 规范化的目录结构
 
 ## 一、环境
 
