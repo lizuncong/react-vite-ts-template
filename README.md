@@ -6,6 +6,8 @@ React + TypeScript + Vite + React Router + React Redux项目脚手架模版。
 - 支持PC 和 H5
 - 规范化的目录结构
 
+> 建议项目的前端相关文档，比如架构设计文档，模块设计文档统一收敛到docs目录下。或者如果是外部文档链接，也可以贴到docs目录里面
+
 ## 一、环境
 
 - node: >=20.0.0
@@ -28,7 +30,7 @@ React + TypeScript + Vite + React Router + React Redux项目脚手架模版。
 
 下图是Code Lint必备插件：
 
-![image](./docs/lint_01.png)
+![image](./docs/images/lint_01.png)
 
 code lint相关工具及其作用
 
@@ -50,7 +52,7 @@ vscode基础配置，比如保存代码自动格式化等基础配置，均需�
 
 eslint负责规范并校验js代码的编写，本身不具备自动格式化功能。ctrl+s保存代码时，prettier会自动格式化代码，比如下图，eslint提示import语句的顺序不对，同时提示useEffect，useState没有使用到。当ctrl + s保存代码时，prettier会自动格式化这些代码。
 
-![image](./docs/eslint_01.gif)
+![image](./docs/images/eslint_01.gif)
 
 > 如果项目使用的ESLint可能会出现与 Prettier 的格式化规则冲突的情况。为了避免这种情况,可以使用 eslint-config-prettier 来禁用所有与 Prettier 冲突的 ESLint 规则
 
@@ -60,7 +62,7 @@ eslint负责规范并校验js代码的编写，本身不具备自动格式化功
 
 stylelint负责规范并校验css/scss/less 代码的编写，本身不具备自动格式化的功能呢。ctrl + s保存代码时，prettier会自动格式化代码，比如下图，stylelint提示height的位置不对，因此保存代码时，prettier会自动调整这些规则的顺序。
 
-![image](./docs/stylelint_01.gif)
+![image](./docs/images/stylelint_01.gif)
 
 ### 3.4 editorconfig
 
@@ -75,11 +77,11 @@ stylelint负责规范并校验css/scss/less 代码的编写，本身不具备自
 
 比如下面是`indent_size`指定为2时，按tab键的空格数
 
-![image](./docs/indent_01.gif)
+![image](./docs/images/indent_01.gif)
 
 比如下面是`indent_size`指定为4时，按tab键的空格数
 
-![image](./docs/indent_02.gif)
+![image](./docs/images/indent_02.gif)
 
 ### 3.5 lintstaged + husky
 
@@ -96,11 +98,11 @@ lint-staged 是一个工具，它允许你在 Git 提交前对暂存区（即通
 - .husky/commit-msg
 - .husky/pre-commit
 
-![image](./docs/husky.png)
+![image](./docs/images/husky.png)
 
 如下图所示，当代码中存在错误时，代码就没法提交上去
 
-![image](./docs/lint_stage.gif)
+![image](./docs/images/lint_stage.gif)
 
 > 因此，在开发的过程中，如果有eslint的告警，要及时修复，避免在提交的时候遇到麻烦。
 
@@ -115,4 +117,4 @@ commitlint 是一个用于校验 Git 提交消息是否符合规范的工具。�
 - 文档生成：基于提交信息生成项目变更日志，便于团队成员了解项目的历史变更。
 - 自动化测试：可以在持续集成/持续部署（CI/CD）流程中集成，确保每次提交都符合格式要求，从而提高代码质量
 
-![image](./docs/commit_msg.png)
+![image](./docs/images/commit_msg.png)
